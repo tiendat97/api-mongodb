@@ -8,7 +8,7 @@ exports.create = (req, res ) => {
 
     const note = new Note({
         title: req.body.title || "Unitreld Egas",
-        content: req.body.content
+        content: req.body.content 
     })
 
     note.save().then(data => {
